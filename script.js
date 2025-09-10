@@ -56,7 +56,8 @@ for (let index = 0; index < teamMembers.length; index++) {
       </div>
       <div class="card-text">
         <h3>${member.name}</h3>
-        <p>${member.role}</p>
+        <span>${member.role}</span>
+        <br>
         <a href=${member.email}>${member.email}</a>
       </div>
   </div>`;

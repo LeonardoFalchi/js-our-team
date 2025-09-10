@@ -1,0 +1,54 @@
+/* generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h3 , 
+span {
+    color: white;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 150px;
+}
+
+img {
+    width: 150px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.team-card {
+    display: flex;
+    flex-shrink: 0;
+    background-color: black;
+    min-width: 400px;
+}
+
+.card-text {
+    margin-left: 15px;
+    align-content: center;
+    flex-grow: 1;
+}
