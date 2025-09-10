@@ -36,3 +36,35 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+//seleziono il container delle card
+const cardContainer = document.querySelector(".team-container");
+
+//creo variabile di accumulo output (stringhe)
+let cards = ""
+//ciclo array degli oggetti
+for (let index = 0; index < teamMembers.length; index++) {
+  //estrapolo ogni oggetto
+  const member = teamMembers[index];
+  console.log(member);
+
+  //per ogni oggetto creo card(stringa) e la aggiungo alla variabile di accumulo
+  cards += `
+  <div class="team-card">
+      <div class="card-image">
+        <img src="${member.img}" alt="${member.name}" />
+      </div>
+      <div class="card-text">
+        <h3>${member.name}</h3>
+        <p>${member.role}</p>
+        <a href=${member.email}>${member.email}</a>
+      </div>
+  </div>`;
+
+  console.log("iterazione sull'oggetto numero:", index, cards);
+
+
+}
+
+//output del blocco card
+cardContainer.innerHTML = cards;
